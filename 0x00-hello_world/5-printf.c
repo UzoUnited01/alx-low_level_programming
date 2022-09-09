@@ -1,11 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - print the string in the put function
+ * main - Print a text
  *
- * Description: using the main function
- * this program prints "with proper grammar, but the outcome is a piece of art,"
- * Return: 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
