@@ -6,25 +6,34 @@
  */
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int nl = 0, n2, n3;
 
-	for (digit1 = 0; digit1 < 9; digit1++)
+	while (nl <= 9)
 	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+		n2 = 0;
+		while (n2 <= 9)
 		{
-			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
+			n3 = 0;
+			while (n3 <= 9)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
+				if (nl != n2 && nl < n2 && n2 != n3 && n2 < n3)
+				{
+					putchar(nl + 48);
+					putchar(n2 + 48);
+					putchar(n3 + 48);
 
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-					continue;
-				putchar(',');
-				putchar(' ');
+					if (nl + n2 + n3 != 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				++n3;
 			}
+			++n2;
 		}
+		++nl;
 	}
-	putchar('\n);
+	putchar('\n');
 	return (0);
 }
