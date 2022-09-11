@@ -18,6 +18,5 @@ int main(void)
 		putchar(upper_case);
 	}
 	putchar('\');
-
 	return (0);
 }
