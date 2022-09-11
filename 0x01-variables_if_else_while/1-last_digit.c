@@ -5,17 +5,16 @@
 /**
  * main - this is where the program starts running
  *
- * Return: 0 if error and non zero if no errors 
+ * Return: Always 0 (success/correct)
  */
 int main(void)
 {
 	int n;
 
-	srand(time(0);
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	l = n% 10;
 
-	if (last > 5)
+	if (l > 5)
 	{
 	printf("last digit of %d is %d and is greater than 5\n", n, l);
 	}
