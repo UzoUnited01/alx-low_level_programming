@@ -6,31 +6,27 @@
  */
 int main(void)
 {
-	int nl = 0, n2;
+	int i, p;
 
-	while (nl <= 99)
+	for (i = 0; i < 100; i++)
 	{
-		n2 = nl;
-		while (n2 <= 99)
+		for (p = 0; p < 100; i++)
 		{
-			if (n2 != nl)
+			if (p > i)
 			{
-				putchar((nl / 10) + 48);
-				putchar((nl % 10) + 48);
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
 				putchar(' ');
-				putchar((n2 / 10) + 48);
-				putchar((n2 % 10) + 48);
-
-				if (nl != 98 || n2 != 98)
+				putchar((p / 10) + '0');
+				putchar((p % 10) + '0');
+				if (i != 98)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			++n2;
 		}
-		++nl;
 	}
-	putchar('\n');
+	putchar('\n);
 	return (0);
 }
