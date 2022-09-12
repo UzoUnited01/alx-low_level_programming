@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main -Entry point
  *
@@ -6,30 +6,26 @@
  */
 int main(void)
 {
-	int n1 = 0, n2;
+	int i, p;
 
-	while (n1 <= 99)
+	for (i = 0; i < 100; i++)
 	{
-		n2 = n1;
-		while (n2 <= 99)
+		for (p = 0; p < 100; i++)
 		{
-			if (n2 != n1)
+			if (p > i)
 			{
-				putchar((n1 / 10) + 48);
-				putchar((n1 % 10) + 48);
+				putchar((i / 10) + '0');
+				putchar((i % 10) + '0');
 				putchar(' ');
-				putchar((n2 / 10) + 48);
-				putchar((n2 % 10) + 48);
-
-				if (n1 != 98 || n2 != 98)
+				putchar((p / 10) + '0');
+				putchar((p % 10) + '0');
+				if (i != 98)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			++n2;
 		}
-		++n1;
 	}
 	putchar('\n');
 	return (0);
