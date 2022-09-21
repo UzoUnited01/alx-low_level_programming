@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strcatat - Concatenates two strings
+ * _strcat - Concatenates two strings
  * @dest: The destination string
- * @src: THe source string
+ * @src: The source string
  *
  * Return: A pointer to the resulting string dest
  */
