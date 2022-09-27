@@ -1,11 +1,18 @@
+/*
+ * File: 5-strstr.c
+ * Auth: Someone who is kind
+ */
+
 #include "main.h"
 
 /**
- * _strstr - Locates a substring
- * @haystack: string in which to check for needle
- * @needle; substring to find in haystack
+ * _strstr - Locates a substring.
+ * @haystack: The string to be searched.
+ * @needle: The substring to be located.
  *
- * Return: pointer to beginning of needle in haystack or NULL if no match
+ * Return: If the substring is located - a pointer to the beginning
+ * of the located substring.
+ * If teh substring is not located - NULL.
  */
 
 char *_strstr(char *haystack, char *needle)
@@ -32,6 +39,5 @@ char *_strstr(char *haystack, char *needle)
 
 		haystack++;
 	}
-
 	return ('\0');
 }
