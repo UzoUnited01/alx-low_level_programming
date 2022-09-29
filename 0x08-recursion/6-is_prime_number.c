@@ -15,7 +15,7 @@ int is_prime_number(int n)
 }
 
 /**
- * actual-prime - calculates if a num is prime
+ * actual_prime - calculates if a num is prime
  * @n: number
  * @i: counter
  * Return: 1 if n is prime, 0 if not
