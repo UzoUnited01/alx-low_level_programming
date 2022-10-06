@@ -4,7 +4,7 @@
 /**
  * _print - moves a string one place to the left and prints the string
  * @str: string to move
- * @1: siz of string
+ * @l: siz of string
  *
  * Return: void
  */
@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
 	char *t;
 	char e[] = "Error\n"
 
-		if (argc != 3 || check_for-digits(argv))
+		if (argc != 3 || check_for_digits(argv))
 		{
 			for (ti = 0; e[ti]; ti++)
 				_putchar(e[ti]);
@@ -134,7 +134,7 @@ int main(int argc, char *argv[])
 	init(a, ln - l);
 	for (ti = l2 - 1, i = 0; ti >= 0; ti--, i++)
 	{
-		t = mul(argv[2][ti], argv[1], l1 -1, a,a (ln - 2) -i);
+		t = mul(argv[2][ti], argv[1], l1 - 1, a, (ln - 2) - i);
 		if (t == NULL)
 		{
 			for (ti = 0; e[ti]; ti++)
